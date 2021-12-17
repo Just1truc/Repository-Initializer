@@ -16,7 +16,9 @@ then
     echo "alias initialize='sh ~/init_scripts/init.sh'" >> ~/.zshrc
     echo "=> Add alias..."
 fi
-echo "=> Alias created..."
-echo "=> Erasing repo..."
-sudo rm -R .
+echo "=> Alias created or already existing..."
+tput setaf 2
+echo "=> Installation Done..."
+tput sgr 0
+echo "=> Restarting Zsh..."
 zsh

@@ -1,7 +1,7 @@
 NAME
-        init.py - prepare repository
+        initialize - prepare repository
 USAGE
-        python init.py [Project_Name] [Binary_Name] [Configuration]
+        initialize [Project_Name] [Binary_Name] [Configuration]
 DESCRIPTION
         Organize repository using a given configuration.
 ERROR
