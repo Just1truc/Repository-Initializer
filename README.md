@@ -1,6 +1,6 @@
 # Repository-Initializer
 
-Repository-Initializer is a Program that create an alias which can be used to instantly create a structure for code projects in C.
+Repository-Initializer is a Program that create an alias which can be used to instantly create a structure for code projects in C depending of a given configuration.
 
 ## Needs
 
