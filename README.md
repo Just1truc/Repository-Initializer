@@ -31,6 +31,17 @@ sh Repository-Initializer/install_organizer.sh
 
 ## Usage
 
+Classic Usage:
+
 ```bash
 initialize project_name binary_name
 ```
+The usage can be modified by changing the configuration file
+
+```bash
+nano ~/init_scripts/sources/config.json
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
