@@ -1,0 +1,16 @@
+{
+    "src": [
+        "project.c"
+    ],
+    "include": [
+        "include.h"
+    ],
+    "tests": [
+        "test_unit.c"
+    ],
+    ".": [
+    "Makefile",
+    "main.c",
+    ".gitignore"
+    ]
+}
