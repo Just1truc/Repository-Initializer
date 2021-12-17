@@ -1,7 +1,7 @@
 NAME
         initialize - prepare repository
 USAGE
-        initialize [Project_Name] [Binary_Name] [Configuration]
+        initialize [Project_Name] [Binary_Name]
 DESCRIPTION
         Organize repository using a given configuration.
 ERROR

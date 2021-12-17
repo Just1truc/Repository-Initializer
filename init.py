@@ -91,6 +91,6 @@ def main():
         print("=> Configuration loaded successfully")
         create_repository(binary_name, project_name, config)
     else:
-        print("=> Error:", len(sys.argv), "arguments given but expected 3")
+        print("=> Error:", len(sys.argv) - 1, "arguments given but expected 2")
 
 main()
