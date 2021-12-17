@@ -1,25 +1,28 @@
 import sys
 import json
+import os
 
 ##def create_makefile(config, project_name, binary_name):
 
-def create_repository(binary_name, project_name, config):
+##def create_repository(binary_name, project_name, config):
     
 
 def main():
     if len(sys.argv) == 1:
-        for line in open("sources/help.txt"):
+        path = os.path.expanduser('~')
+        for line in open(path + "/init_scripts/sources/help.txt"):
             print(line)
     elif len(sys.argv) == 3:
         try:
             binary_name = sys.argv[2]
             project_name = sys.argv[1]
             sum = ""
-            for line in open("sources/config.json"):
+            path = os.path.expanduser('~')
+            for line in open(path + "/init_scripts/sources/config.json"):
                 sum += (line.replace("\n", "")).replace(" ", "")
             config = json.loads(sum)
             print("Configuration loaded successfully")
-            create_repository(binary_name, project_name, config)
+            ##create_repository(binary_name, project_name, config)
         except:
             print("Configuration not found")
             print("Configuration should be in 'sources' directory and named 'config.json'")

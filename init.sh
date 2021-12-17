@@ -1,2 +1,2 @@
 #!/bin/sh
-python init.py
+python3 init.py $1 $2 $3
