@@ -10,7 +10,7 @@ def create_main(project_name, binary_name, config):
         for files in config[directory]:
             if files == "main.c":
                 file = open(directory + "/" + files, "w+")
-                file.write("/* \n")
+                file.write("/*\n")
                 file.write("** EPITECH PROJECT, " + str(date.today().year) + "\n")
                 file.write("** " + str(project_name) + "\n")
                 file.write("** File description:\n")
@@ -20,7 +20,7 @@ def create_main(project_name, binary_name, config):
 def create_include(project_name, binary_name, config):
     h_name = project_name.upper() + "_H_"
     file = open("include/" + project_name + ".h", "w+")
-    file.write("/* \n")
+    file.write("/*\n")
     file.write("** EPITECH PROJECT, " + str(date.today().year) + "\n")
     file.write("** " + str(project_name) + "\n")
     file.write("** File description:\n")
@@ -34,7 +34,7 @@ def create_makefile(project_name, binary_name, config):
     file_nbr = 0
     i = 0
     file = open("Makefile", "w+")
-    file.write("## \n")
+    file.write("##\n")
     file.write("## EPITECH PROJECT, " + str(date.today().year) + "\n")
     file.write("## " + str(project_name) + "\n")
     file.write("## File description:\n")
@@ -88,7 +88,7 @@ def create_repository(binary_name, project_name, config):
                 already_here += 1;
                 file = open(paths, "w+")
                 if (files != "Makefile" and (".h" in files) != True and files != "main.c"):
-                    file.write("/* \n")
+                    file.write("/*\n")
                     file.write("** EPITECH PROJECT, " + str(date.today().year) + "\n")
                     file.write("** " + str(project_name) + "\n")
                     file.write("** File description:\n")
