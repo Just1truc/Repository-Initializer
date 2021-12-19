@@ -25,9 +25,9 @@ def create_include(project_name, binary_name, config):
     file.write("** " + str(project_name) + "\n")
     file.write("** File description:\n")
     file.write("** simple_description\n*/\n")
-    file.write("\n#ifndef\t" + h_name + "\n")
-    file.write("\t#define\t" + h_name + "\n\n")
-    file.write("#endif\t/* " + h_name + " */\n")
+    file.write("\n#ifndef " + h_name + "\n")
+    file.write("    #define " + h_name + "\n\n")
+    file.write("#endif  /* " + h_name + " */\n")
     file.close()
 
 def create_makefile(project_name, binary_name, config):
